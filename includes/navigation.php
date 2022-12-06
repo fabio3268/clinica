@@ -17,10 +17,10 @@
                 <li class="nav-item"><a class="nav-link" href="service.php">Serviços</a></li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
+                    <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro <i class="icofont-thin-down"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                        <li><a class="dropdown-item" href="department.html">Departments</a></li>
-                        <li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
+                        <li><a class="dropdown-item" href="register.php">Registre-se</a></li>
+                        <li><a class="dropdown-item" href="login.php">Login</a></li>
                     </ul>
                 </li>
 

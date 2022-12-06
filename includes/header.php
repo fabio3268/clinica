@@ -1,4 +1,3 @@
-<header>
     <div class="header-top-bar">
         <div class="container">
             <div class="row align-items-center">
@@ -19,5 +18,3 @@
             </div>
         </div>
     </div>
-
-</header>
