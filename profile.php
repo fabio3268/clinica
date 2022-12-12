@@ -2,22 +2,8 @@
     session_start();
     if(!empty($_SESSION["user"])){
         //var_dump($_SESSION["user"]["id"]);
-        $host = "localhost";
-        $user = "root";
-        $password = "";
-        $database = "bd-clinica";
-        $options = [
-            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
-        ];
 
-        $conn = new PDO(
-            "mysql:host=$host;dbname=$database",
-            $user,
-            $password,
-            $options
-        );
+        include __DIR__ . "/source/connection.php";
 
         $id = $_SESSION["user"]["id"];
         $query = "SELECT * 
