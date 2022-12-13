@@ -1,3 +1,8 @@
+<?php
+  include __DIR__ . "/../source/connection.php";
+  include __DIR__ . "/../source/helpers.php";
+  $especialties = getEspecialties($conn);
+?>
 <nav class="navbar navbar-expand-lg navigation" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="index.php">
@@ -25,11 +30,13 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
+                    <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades <i class="icofont-thin-down"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                        <li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
-                        <li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-                        <li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
+                        <?php
+                          foreach ($especialties as $especialty){
+                              echo "<li><a class=\"dropdown-item\" href=\"especialty.php?idEspecialty={$especialty->id}\">{$especialty->description}</a></li>";
+                          }
+                        ?>
                     </ul>
                 </li>
 
