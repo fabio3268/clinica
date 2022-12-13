@@ -26,6 +26,8 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdown02">
                         <li><a class="dropdown-item" href="register.php">Registre-se</a></li>
                         <li><a class="dropdown-item" href="login.php">Login</a></li>
+                        <li><a class="dropdown-item" href="profile.php">Perfil</a></li>
+                        <li><a class="dropdown-item" href="logout.php">Sair</a></li>
                     </ul>
                 </li>
 

@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(empty($_SESSION["user"]["id"])){
+        header("Location:login.php");
+    }
     if(!empty($_SESSION["user"])){
         //var_dump($_SESSION["user"]["id"]);
 
