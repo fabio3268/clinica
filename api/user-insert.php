@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . "/../source/connection.php";
-//$user = $_POST;
+
 $user = filter_var_array($_POST, FILTER_DEFAULT);
 
 if(in_array("",$user)){
@@ -38,6 +38,3 @@ $response = [
     "name" => $user["name"]
 ];
 echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-
-
-

@@ -19,38 +19,36 @@
     <title>.:: Clínica - Área Administrativa ::..</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Médicos
+                        Perfil
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="doctor-insert.php">Incluir</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Atualizar</a></li>
+                        <li><a class="dropdown-item" href="#>">Sair</a></li>
                     </ul>
                 </li>
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                -->
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projetos
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Submeter</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -66,7 +64,7 @@
     </div>
     <div class="form-group">
         <label for="exampleFormControlSelect1">Especialidade</label>
-        <select name="specialty" class="form-control" id="exampleFormControlSelect1">
+        <select name="category" class="form-select">
             <option value="">Selecione Especialidade...</option>
             <?php
             foreach ($specialties as $specialty){

@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="text-center">
-                        <input class="btn btn-main btn-round-full" name="submit" type="submit" value="Enviar"></input>
+                        <input class="btn btn-main btn-round-full" name="submit" type="submit" value="Salvar"></input>
                     </div>
                 </form>
             </div>
@@ -125,10 +125,6 @@
         },4000);
     });
 </script>
-
-<div class="google-map ">
-    <div id="map"></div>
-</div>
 <!-- footer Start -->
 <?php
 include __DIR__ . "/includes/footer.php";
